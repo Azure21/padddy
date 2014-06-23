@@ -1,0 +1,502 @@
+<!--说不定哪一天我就告别实验室了，珍惜眼前...这台大Mac-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="稻禾;用户详情">
+    <meta name="author" content="Azure21">
+    <link rel="shortcut icon" href="../dist/ico/padddyicon.png">
+
+    <title>稻禾-禄一湛</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../dist/css/main.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- LogoutModal -->
+<div class="modal fade myModal" id="logout-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove-sign"></span></button>
+                <h4 class="modal-title" id="myModalLabel">登出稻禾</h4>
+            </div>
+            <div class="modal-body">
+                <p>确定要注销你的账户？</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <a href="main.html" class="btn btn-warning">确定登出</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img id="padddytitle" src="../dist/img/padddytitle.png">
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="main.html">首页</a></li>
+                <li><a href="launch0.html">发起</a></li>
+                <li><a href="#contact">专题</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-send"></span> 发送反馈</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> 加入我们</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-leaf"></span> 关于稻禾</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="list-inline"><img class="featurette-image img-responsive img-circle" src="http://lorempixel.com/50/50/abstract/1" alt="Generic placeholder thumbnail"></li>
+                <li class="dropdown list-inline">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">禄一湛 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a href="#">个人主页</a></li>
+                        <li><a href="infoedit.html">修改资料</a></li>
+                        <li><a data-toggle="modal" href="#logout-modal">登出稻禾</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container">
+<div class="row">
+    <div class="col-xs-5 col-sm-2">
+        <img class=" featurette-image img-responsive img-circle center-block" src="http://lorempixel.com/150/150/abstract/1" id="avatar-big" alt="Generic placeholder thumbnail">
+    </div>
+    <div class="col-xs-7 col-sm-10">
+        <h2>禄一湛</h2>
+        <h4>北京科技大学</h4>
+        <h4>计算机科学与技术</h4>
+    </div>
+</div>
+
+<ul class="nav nav-pills" id="my-nav-pills">
+    <li><a class="my-active" href="#">进行</a></li>
+    <li><a class="my-inactive" href="#">加入</a></li>
+    <li><a class="my-inactive" href="#">发起</a></li>
+</ul>
+
+<div class="row">
+<div class="col-sm-9">
+
+
+<hr id="nav-hr">
+
+<div class="row" >
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="thumbnail myThumbnail"> <img src="http://lorempixel.com/270/180/people" alt="...">
+        <div class="caption">
+            <h4><strong><a href="activity.html">稻禾黑客马拉松<br><small>发起自&nbsp;&nbsp;稻禾实验室</small></a></strong></h4>
+            <p class="activityDesc">24个小时内，拿出你的创意，组件你的团队，实现你的想法，然后像上帝一样俯瞰着这个世界，我们是Geek，我们是造物主</p>
+            <div class="detail">
+                <p><img src="../dist/ico/location.png"/>&nbsp;&nbsp;机电楼315</p>
+                <p><img src="../dist/ico/time.png"/>&nbsp;&nbsp;2014/6/23&nbsp;&nbsp;3:00pm</p>
+                <hr/>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 67%"> <span class="sr-only">45% Complete</span> </div>
+                </div>
+                <table>
+                    <tr>
+                        <td><strong>2/10</strong></td>
+                        <td><strong>243</strong></td>
+                        <td><strong>155</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../dist/ico/join.png"/></td>
+                        <td><img src="../dist/ico/collection.png"/></td>
+                        <td><img src="../dist/ico/seen.png"/></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="thumbnail myThumbnail"> <img src="http://lorempixel.com/270/180/sports" alt="...">
+        <div class="caption">
+            <h4><strong><a href="activity.html">大鲨鱼游泳PK赛<br><small>发起自&nbsp;&nbsp;国防体育协会</small></a></strong></h4>
+            <p class="activityDesc">巅峰对决！决战游泳馆，看看谁坚持到最后，参赛者可领取免费晚餐券~</p>
+            <div class="detail">
+                <p><img src="../dist/ico/location.png"/>&nbsp;&nbsp;学生活动中心南侧</p>
+                <p><img src="../dist/ico/time.png"/>&nbsp;&nbsp;2012/11/27&nbsp;&nbsp;3:00pm</p>
+                <hr/>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"> <span class="sr-only">45% Complete</span> </div>
+                </div>
+                <table>
+                    <tr>
+                        <td><strong>64/128</strong></td>
+                        <td><strong>77</strong></td>
+                        <td><strong>224</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../dist/ico/join.png"/></td>
+                        <td><img src="../dist/ico/collection.png"/></td>
+                        <td><img src="../dist/ico/seen.png"/></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="thumbnail myThumbnail"> <img src="http://lorempixel.com/270/180/animals" alt="...">
+        <div class="caption">
+            <h4><strong><a href="activity.html">暑期西藏骑行组团！<br><small>发起自&nbsp;&nbsp;Luke</small></a></strong></h4>
+            <p class="activityDesc">今年暑期7月份，希望能组件一只属于我们年轻人自己的队伍，一路骑向西南！</p>
+            <div class="detail">
+                <p><img src="../dist/ico/location.png"/>&nbsp;&nbsp;北京到拉萨</p>
+                <p><img src="../dist/ico/time.png"/>&nbsp;&nbsp;2014/7/20&nbsp;&nbsp;8：00am</p>
+                <hr/>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">45% Complete</span> </div>
+                </div>
+                <table>
+                    <tr>
+                        <td><strong>2/10</strong></td>
+                        <td><strong>442</strong></td>
+                        <td><strong>544</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../dist/ico/join.png"/></td>
+                        <td><img src="../dist/ico/collection.png"/></td>
+                        <td><img src="../dist/ico/seen.png"/></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="thumbnail myThumbnail"> <img src="http://lorempixel.com/270/180/city" alt="...">
+        <div class="caption">
+            <h4><strong><a href="activity.html">贝帮2.0版体验报名<br><small>发起自&nbsp;&nbsp;灯泡科技</small></a></strong></h4>
+            <p class="activityDesc">校园生活帮手贝帮2.0版即将发布，现需要50名志愿者组成测试群，一起把贝帮做的更好！测试用户可获得灯泡科技限量版T恤衫一件！</p>
+            <div class="detail">
+                <p><img src="../dist/ico/location.png"/>&nbsp;&nbsp;机电楼806</p>
+                <p><img src="../dist/ico/time.png"/>&nbsp;&nbsp;2014/9/1&nbsp;&nbsp;1:00 pm</p>
+                <hr/>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">45% Complete</span> </div>
+                </div>
+                <table>
+                    <tr>
+                        <td><strong>12/50</strong></td>
+                        <td><strong>32</strong></td>
+                        <td><strong>130</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../dist/ico/join.png"/></td>
+                        <td><img src="../dist/ico/collection.png"/></td>
+                        <td><img src="../dist/ico/seen.png"/></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="thumbnail myThumbnail"> <img src="http://lorempixel.com/270/180/abstract/1" alt="...">
+        <div class="caption">
+            <h4><strong><a href="activity.html">一起摇滚吧！<br><small>发起自&nbsp;&nbsp;Just a Band</small></a></strong></h4>
+            <p class="activityDesc">热爱摇滚的少年们！Just a Band本周末晚上将在学校礼堂为大家奉献一场精彩的演出，摇滚少年不要错过哇！</p>
+            <div class="detail">
+                <p><img src="../dist/ico/location.png"/>&nbsp;&nbsp;学校礼堂</p>
+                <p><img src="../dist/ico/time.png"/>&nbsp;&nbsp;2014/6/8&nbsp;&nbsp;7:00pm</p>
+                <hr/>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width: 67%"> <span class="sr-only">45% Complete</span> </div>
+                </div>
+                <table>
+                    <tr>
+                        <td><strong>200/300</strong></td>
+                        <td><strong>877</strong></td>
+                        <td><strong>1551</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../dist/ico/join.png"/></td>
+                        <td><img src="../dist/ico/collection.png"/></td>
+                        <td><img src="../dist/ico/seen.png"/></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="thumbnail myThumbnail"> <img src="http://lorempixel.com/270/180/food/1" alt="...">
+        <div class="caption">
+            <h4><strong><a href="activity.html">百年修得共枕眠<br><small>发起自&nbsp;&nbsp;计算机协会</small></a></strong></h4>
+            <p class="activityDesc">一周一次的计算机协会义诊本周照常！为广大师生免费维修清理电脑，安装各种操作系统（如果需要的话还可以配置各种开发环境）</p>
+            <div class="detail">
+                <p><img src="../dist/ico/location.png"/>&nbsp;&nbsp;学生活动中心南侧</p>
+                <p><img src="../dist/ico/time.png"/>&nbsp;&nbsp;2012/11/27&nbsp;&nbsp;3:00pm</p>
+                <hr/>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"> <span class="sr-only">45% Complete</span> </div>
+                </div>
+                <table>
+                    <tr>
+                        <td><strong>64/128</strong></td>
+                        <td><strong>277</strong></td>
+                        <td><strong>1224</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../dist/ico/join.png"/></td>
+                        <td><img src="../dist/ico/collection.png"/></td>
+                        <td><img src="../dist/ico/seen.png"/></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="thumbnail myThumbnail"> <img src="http://lorempixel.com/270/180/cats/1" alt="...">
+        <div class="caption">
+            <h4><strong><a href="activity.html">尝尝家乡菜<br><small>发起自&nbsp;&nbsp;北科吃货联盟</small></a></strong></h4>
+            <p class="activityDesc">下学期来的时候带上自己家乡的特色美食，然后...你就可以与其他的99枚吃货交换美食啦！</p>
+            <div class="detail">
+                <p><img src="../dist/ico/location.png"/>&nbsp;&nbsp;学生活动中心</p>
+                <p><img src="../dist/ico/time.png"/>&nbsp;&nbsp;2014/9/13&nbsp;&nbsp;2:45am</p>
+                <hr/>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">45% Complete</span> </div>
+                </div>
+                <table>
+                    <tr>
+                        <td><strong>97/100</strong></td>
+                        <td><strong>524</strong></td>
+                        <td><strong>1332</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../dist/ico/join.png"/></td>
+                        <td><img src="../dist/ico/collection.png"/></td>
+                        <td><img src="../dist/ico/seen.png"/></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="thumbnail myThumbnail"> <img src="http://lorempixel.com/270/180/nature/1" alt="...">
+        <div class="caption">
+            <h4><strong><a href="activity.html">论程序员的审美<br><small>发起自&nbsp;&nbsp;程序员自黑联盟</small></a></strong></h4>
+            <p class="activityDesc">程序猿的审美和程序猿一样，从来都不属于这个星球，本期专题，让我们一同走进程序员眼中的不一样的世界吧</p>
+            <div class="detail">
+                <p><img src="../dist/ico/location.png"/>&nbsp;&nbsp;机电楼806</p>
+                <p><img src="../dist/ico/time.png"/>&nbsp;&nbsp;2012/12/1&nbsp;&nbsp;1:00 pm</p>
+                <hr/>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">45% Complete</span> </div>
+                </div>
+                <table>
+                    <tr>
+                        <td><strong>5/15</strong></td>
+                        <td><strong>4</strong></td>
+                        <td><strong>6</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../dist/ico/join.png"/></td>
+                        <td><img src="../dist/ico/collection.png"/></td>
+                        <td><img src="../dist/ico/seen.png"/></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="thumbnail myThumbnail"> <img src="http://lorempixel.com/270/180/abstract/2" alt="...">
+        <div class="caption">
+            <h4><strong><a href="activity.html">大仙儿的设计分享沙龙<br><small>发起自&nbsp;&nbsp;大仙儿</small></a></strong></h4>
+            <p class="activityDesc">周三晚上7点，一场设计大讨论即将上演，你觉得什么才是真正的设计呢？一起来探讨吧！</p>
+            <div class="detail">
+                <p><img src="../dist/ico/location.png"/>&nbsp;&nbsp;机电楼610</p>
+                <p><img src="../dist/ico/time.png"/>&nbsp;&nbsp;2014/6/11&nbsp;&nbsp;7:00pm</p>
+                <hr/>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 67%"> <span class="sr-only">45% Complete</span> </div>
+                </div>
+                <table>
+                    <tr>
+                        <td><strong>20/40</strong></td>
+                        <td><strong>43</strong></td>
+                        <td><strong>78</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../dist/ico/join.png"/></td>
+                        <td><img src="../dist/ico/collection.png"/></td>
+                        <td><img src="../dist/ico/seen.png"/></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="thumbnail myThumbnail"> <img src="http://lorempixel.com/270/180/food/2" alt="...">
+        <div class="caption">
+            <h4><strong><a href="activity.html">为什么就成了口水歌？<br><small>发起自&nbsp;&nbsp;光年乐队</small></a></strong></h4>
+            <p class="activityDesc">一场关于口水歌的大讨论，为什么有的歌一听就是口水歌？它满足怎样的规律呢？你一定很有兴趣！</p>
+            <div class="detail">
+                <p><img src="../dist/ico/location.png"/>&nbsp;&nbsp;镭目</p>
+                <p><img src="../dist/ico/time.png"/>&nbsp;&nbsp;2014/7/1&nbsp;&nbsp;3:00pm</p>
+                <hr/>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 50%"> <span class="sr-only">45% Complete</span> </div>
+                </div>
+                <table>
+                    <tr>
+                        <td><strong>210/300</strong></td>
+                        <td><strong>577</strong></td>
+                        <td><strong>2224</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../dist/ico/join.png"/></td>
+                        <td><img src="../dist/ico/collection.png"/></td>
+                        <td><img src="../dist/ico/seen.png"/></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="thumbnail myThumbnail"> <img src="http://lorempixel.com/270/180/cats/2" alt="...">
+        <div class="caption">
+            <h4><strong><a href="activity.html">走进大凉山<br><small>发起自&nbsp;&nbsp;志愿者协会</small></a></strong></h4>
+            <p class="activityDesc">今年暑假，和我们一起走进大凉山，为那里的孩子们带去不一样的温暖！</p>
+            <div class="detail">
+                <p><img src="../dist/ico/location.png"/>&nbsp;&nbsp;凉山自治州</p>
+                <p><img src="../dist/ico/time.png"/>&nbsp;&nbsp;2014/8/1&nbsp;&nbsp;8:00am</p>
+                <hr/>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">45% Complete</span> </div>
+                </div>
+                <table>
+                    <tr>
+                        <td><strong>6/12</strong></td>
+                        <td><strong>54</strong></td>
+                        <td><strong>233</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../dist/ico/join.png"/></td>
+                        <td><img src="../dist/ico/collection.png"/></td>
+                        <td><img src="../dist/ico/seen.png"/></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="thumbnail myThumbnail"> <img src="http://lorempixel.com/270/180/nature/2" alt="...">
+        <div class="caption">
+            <h4><strong><a href="activity.html">稻禾实验室招募进行时<br><small>发起自&nbsp;&nbsp;稻禾实验室</small></a></strong></h4>
+            <p class="activityDesc">你看的没错！稻禾实验室最近打算迎接新的小伙伴啦！在摄影和视频制作当面擅长的同学们不要错过机会啊！</p>
+            <div class="detail">
+                <p><img src="../dist/ico/location.png"/>&nbsp;&nbsp;机电楼806</p>
+                <p><img src="../dist/ico/time.png"/>&nbsp;&nbsp;2012/12/1&nbsp;&nbsp;6:00 pm</p>
+                <hr/>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">45% Complete</span> </div>
+                </div>
+                <table>
+                    <tr>
+                        <td><strong>1/4</strong></td>
+                        <td><strong>2122</strong></td>
+                        <td><strong>2401</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../dist/ico/join.png"/></td>
+                        <td><img src="../dist/ico/collection.png"/></td>
+                        <td><img src="../dist/ico/seen.png"/></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div><!-- /row -->
+<ul class="pager">
+    <li><a href="#">浏览更多 &rarr;</a></li>
+</ul>
+</div><!-- /left cards -->
+
+<div class="col-sm-2 col-md-2 col-lg-2 blog-sidebar pull-right">
+    <div class="sidebar-module sidebar-module-inset">
+        <h5>关注了<span class="badge pull-right">42</span></h5>
+        <h5>被关注<span class="badge pull-right">556</span></h5>
+        <h5>总积分<span class="badge pull-right">143</span></h5>
+    </div>
+    <hr>
+    <div class="sidebar-module sidebar-module-inset">
+        <p>学生，google脑残粉，做一些小产品，写一些小程序，也不知道算不算个开发者...</p>
+    </div>
+    <hr>
+    <div class="sidebar-module">
+        <h4>其他主页</h4>
+        <ol class="list-unstyled">
+            <li><a href="#">人人主页</a></li>
+            <li><a href="#">微博主页</a></li>
+        </ol>
+    </div>
+</div><!-- /.blog-sidebar -->
+
+</div><!-- /row -->
+
+</div> <!-- /container -->
+<div id="footer">
+    <img class="center-block" id="footerlogo" src="../dist/img/footerlogo.png">
+</div>
+
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../dist/js/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+</body>
+</html>

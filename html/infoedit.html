@@ -1,0 +1,241 @@
+<!--
+我才不会告诉你晓波突然打算去百度实习是因为一个妹纸，嘿嘿嘿
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="稻禾;资料修改">
+    <meta name="author" content="Azure21">
+    <link rel="shortcut icon" href="../dist/ico/padddyicon.png">
+
+    <title>稻禾-资料修改</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../dist/css/main.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- LogoutModal -->
+<div class="modal fade myModal" id="logout-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove-sign"></span></button>
+                <h4 class="modal-title" id="myModalLabel">登出稻禾</h4>
+            </div>
+            <div class="modal-body">
+                <p>确定要注销你的账户？</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <a href="main.html" class="btn btn-warning">确定登出</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div><!-- /.modal -->
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img id="padddytitle" src="../dist/img/padddytitle.png">
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="main.html">首页</a></li>
+                <li><a href="launch0.html">发起</a></li>
+                <li><a href="#contact">专题</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-send"></span> 发送反馈</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> 加入我们</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-leaf"></span> 关于稻禾</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="list-inline"><img class="featurette-image img-responsive img-circle" src="http://lorempixel.com/50/50/abstract/1" alt="Generic placeholder thumbnail"></li>
+                <li class="dropdown list-inline">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">禄一湛 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="profile.html">个人主页</a></li>
+                        <li class="active"><a href="#">修改资料</a></li>
+                        <li><a data-toggle="modal" href="#logout-modal">登出稻禾</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container edit-container" id="myContainer">
+    <ul class="nav nav-pills" id="my-nav-pills">
+        <li><a class="my-active" href="#">基本信息</a></li>
+        <li><a class="my-inactive" href="accountedit.html">账户信息</a></li>
+        <li><a class="my-inactive" href="passwdedit.html">密码修改</a></li>
+    </ul>
+    <hr id="nav-hr">
+    <form role="form">
+    <div class="row">
+    <div class="col-xs-12 col-sm-3">
+        <h4>头像</h4>
+    </div>
+        <div class="col-xs-12 col-sm-9">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4">
+                    <img id="avatar" class=" featurette-image img-responsive img-circle" src="http://lorempixel.com/120/120/abstract/1" id="avatar-big" alt="Generic placeholder thumbnail">
+                </div>
+                <div class="col-xs-8 col-sm-8" id="iconInfo">
+                    <a class="btn btn-warning" role="button" onclick="avatar1()">上传头像</a>
+                     <p>支持PNG、JPG、GIF格式，小于2M</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-3">
+            <h4>性别</h4>
+        </div>
+        <div class="col-sm-9">
+            <div class="pull-left" id="gender-radios">
+
+                <label class="checkbox-inline">
+                    <input type="radio" id="inlineCheckbox1" name="gender" value="option1" checked> 男
+                </label>
+                <label class="checkbox-inline">
+                    <input type="radio" id="inlineCheckbox2" name="gender" value="option2"> 女
+                </label>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-3">
+            <h4>签名介绍</h4>
+        </div>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" name="desc" value="学生，google脑残粉，做一些小产品，写一些小程序，也不知道算不算个开发者..." placeholder="一句话介绍">
+             <p>例如：某软件开发者、某乐队鼓手、某工作室设计师</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-3">
+            <h4>所在学校</h4>
+        </div>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" name="desc" value="北京科技大学" placeholder="所在院校或教育机构">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <h4>所学专业</h4>
+        </div>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" name="desc" value="计算机科学与技术" placeholder="在校所学专业">
+        </div>
+        </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-3">
+            <h4>QQ号码</h4>
+        </div>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" name="desc" value="408388508" placeholder="你的QQ号码（非必填）">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <h4>微博主页</h4>
+        </div>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" name="desc" value="www.weibo.com" placeholder="你的微博主页地址（非必填）">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <h4>人人主页</h4>
+        </div>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" name="desc" value="www.renren.com" placeholder="你的人人主页地址（非必填）">
+        </div>
+    </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="#" class="pull-left form-inline edit-title" role="button">取消修改 </a>
+            </div>
+            <div class="col-sm-9">
+                <button class="btn btn-lg btn-warning pull-right" type="submit"> 保存修改 </button>
+            </div>
+        </div>
+    </form>
+
+
+</div> <!-- /container -->
+<div id="footer">
+        <img class="center-block" id="footerlogo" src="../dist/img/footerlogo.png">
+</div>
+
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../dist/js/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script src="../dist/js/footer.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#successModal').modal('show');
+        resetPosition();
+    });
+
+    function avatar1(){
+        alert($('#avatar').getAttribute);
+        $('#avatar').attr('src','http://www.baidu.com/img/bdlogo.gif');
+    }
+
+    $(document).resize(function () {
+        resetPosition();
+    });
+
+    function resetPosition() {
+        var icon = $('#iconInfo'),
+                parent = icon.parent();
+
+        icon.css({
+            'margin-top' : parent.height() - 52 / 2 + 'px'
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!--又是一年毕业季，感触良多，明年的这个时候，说再见的就是我们了吧，珍惜眼前人，珍惜当下时光-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="稻禾;活动成员">
+    <meta name="author" content="Azure21">
+    <link rel="shortcut icon" href="../dist/ico/padddyicon.png">
+
+    <title>活动成员</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../dist/css/main.css" rel="stylesheet">
+    <link href="../dist/css/activity.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- LogoutModal -->
+<div class="modal fade myModal" id="logout-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove-sign"></span></button>
+                <h4 class="modal-title" id="myModalLabel">登出稻禾</h4>
+            </div>
+            <div class="modal-body">
+                <p>确定要注销你的账户？</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <a href="main.html" class="btn btn-warning">确定登出</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img id="padddytitle" src="../dist/img/padddytitle.png">
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="main.html">首页</a></li>
+                <li><a href="launch0.html">发起</a></li>
+                <li><a href="#contact">专题</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-send"></span> 发送反馈</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> 加入我们</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-leaf"></span> 关于稻禾</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="list-inline"><img class="featurette-image img-responsive img-circle" src="http://lorempixel.com/50/50/abstract/1" alt="Generic placeholder thumbnail"></li>
+                <li class="dropdown list-inline">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">禄一湛 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="profile.html">个人主页</a></li>
+                        <li><a href="infoedit.html">修改资料</a></li>
+                        <li><a data-toggle="modal" href="#logout-modal">登出稻禾</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container activityContainer" id="myContainer">
+        <div class="starter-template">
+            <h1>稻禾黑客马拉松</h1>
+            <p class="lead">发起自 稻禾实验室</p>
+            <p><img src="../dist/ico/location.png"/>&nbsp;&nbsp;机电楼315&nbsp;&nbsp;&nbsp;&nbsp;<img src="../dist/ico/time.png"/>&nbsp;&nbsp;2013/11/29&nbsp;&nbsp;3:00pm</p>
+        </div>
+
+    <ul class="nav nav-pills" id="my-nav-pills">
+        <li><a class="my-inactive" href="activity.html">活动信息</a></li>
+        <li><a class="my-active" href="#">活动成员</a></li>
+        <li><a class="my-inactive" href="log.html">活动日志</a></li>
+        <li class="pull-right"><a><span class="glyphicon glyphicon-tag"></span> 科技创新</a></li>
+    </ul>
+    <hr id="nav-hr">
+
+    <div class="row" id="activityThumbnail">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail thumbnail-member thumbnail-member-size">
+                <img class="featurette-image img-responsive img-circle center-block" src="http://lorempixel.com/120/120/abstract/1" alt="Generic placeholder thumbnail">
+                <a href="profile.html"><h2>Azure21</h2></a>
+                <p>北京科技大学</p>
+                <p>计算机科学与技术</p>
+                <p class="member-desc"><strong>活动发起人：</strong>学生，google脑残粉，做一些小产品，写一些小程序，也不知道算不算个开发者...</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail thumbnail-member thumbnail-member-size">
+                <img class="featurette-image img-responsive img-circle center-block" src="http://lorempixel.com/120/120/abstract/1" alt="Generic placeholder thumbnail">
+                <h2>Azure21</h2>
+                <p>北京科技大学</p>
+                <p>计算机科学与技术</p>
+                <p><strong>2号成员：</strong>学生，google脑残粉，做一些小产品，写一些小程序，也不知道算不算个开发者...</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail thumbnail-member thumbnail-member-size">
+                <img class="featurette-image img-responsive img-circle center-block" src="http://lorempixel.com/120/120/abstract/1" alt="Generic placeholder thumbnail">
+                <h2>Azure21</h2>
+                <p>北京科技大学</p>
+                <p>计算机科学与技术</p>
+                <p><strong>3号成员：</strong>学生，google脑残粉，做一些小产品，写一些小程序，也不知道算不算个开发者...</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail thumbnail-member thumbnail-member-size">
+                <img class="featurette-image img-responsive img-circle center-block" src="http://lorempixel.com/120/120/abstract/1" alt="Generic placeholder thumbnail">
+                <h2>Azure21</h2>
+                <p>北京科技大学</p>
+                <p>计算机科学与技术</p>
+                <p><strong>4号成员：</strong>学生，google脑残粉，做一些小产品，写一些小程序，也不知道算不算个开发者...</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail thumbnail-member thumbnail-member-size">
+                <img class="featurette-image img-responsive img-circle center-block" src="http://lorempixel.com/120/120/abstract/1" alt="Generic placeholder thumbnail">
+                <h2>Azure21</h2>
+                <p>北京科技大学</p>
+                <p>计算机科学与技术</p>
+                <p><strong>5号成员：</strong>学生，google脑残粉，做一些小产品，写一些小程序，也不知道算不算个开发者...</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail thumbnail-member thumbnail-member-size">
+                <img class="featurette-image img-responsive img-circle center-block" src="http://lorempixel.com/120/120/abstract/1" alt="Generic placeholder thumbnail">
+                <h2>Azure21</h2>
+                <p>北京科技大学</p>
+                <p>计算机科学与技术</p>
+                <p><strong>6号成员：</strong>学生，google脑残粉，做一些小产品，写一些小程序，也不知道算不算个开发者...</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail thumbnail-member thumbnail-member-size">
+                <img class="featurette-image img-responsive img-circle center-block" src="http://lorempixel.com/120/120/abstract/1" alt="Generic placeholder thumbnail">
+                <h2>Azure21</h2>
+                <p>北京科技大学</p>
+                <p>计算机科学与技术</p>
+                <p><strong>7号成员：</strong>学生，google脑残粉，做一些小产品，写一些小程序，也不知道算不算个开发者...</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail thumbnail-member thumbnail-member-size">
+                <img class="featurette-image img-responsive img-circle center-block" src="http://lorempixel.com/120/120/abstract/1" alt="Generic placeholder thumbnail">
+                <h2>Azure21</h2>
+                <p>北京科技大学</p>
+                <p>计算机科学与技术</p>
+                <p><strong>8号成员：</strong>学生，google脑残粉，做一些小产品，写一些小程序，也不知道算不算个开发者...</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail thumbnail-member thumbnail-member-size">
+                <img class="featurette-image img-responsive img-circle center-block" src="http://lorempixel.com/120/120/abstract/1" alt="Generic placeholder thumbnail">
+                <h2>Azure21</h2>
+                <p>北京科技大学</p>
+                <p>计算机科学与技术</p>
+                <p><strong>9号成员：</strong>学生，google脑残粉，做一些小产品，写一些小程序，也不知道算不算个开发者...</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail thumbnail-member thumbnail-member-size">
+                <img class="featurette-image img-responsive img-circle center-block" src="http://lorempixel.com/120/120/abstract/1" alt="Generic placeholder thumbnail">
+                <h2>Azure21</h2>
+                <p>北京科技大学</p>
+                <p>计算机科学与技术</p>
+                <p><strong>10号成员：</strong>学生，google脑残粉，做一些小产品，写一些小程序，也不知道算不算个开发者...</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail thumbnail-member thumbnail-member-size">
+                <img class="featurette-image img-responsive img-circle center-block" src="http://lorempixel.com/120/120/abstract/1" alt="Generic placeholder thumbnail">
+                <h2>Azure21</h2>
+                <p>北京科技大学</p>
+                <p>计算机科学与技术</p>
+                <p><strong>11号成员：</strong>学生，google脑残粉，做一些小产品，写一些小程序，也不知道算不算个开发者...</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail thumbnail-member thumbnail-member-size">
+                <img class="featurette-image img-responsive img-circle center-block" src="http://lorempixel.com/120/120/abstract/1" alt="Generic placeholder thumbnail">
+                <h2>Azure21</h2>
+                <p>北京科技大学</p>
+                <p>计算机科学与技术</p>
+                <p><strong>12号成员：</strong>学生，google脑残粉，做一些小产品，写一些小程序，也不知道算不算个开发者...</p>
+            </div>
+        </div>
+    </div>
+
+</div> <!-- /container -->
+<div id="footer">
+        <img class="center-block" id="footerlogo" src="../dist/img/footerlogo.png">
+</div>
+
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../dist/js/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script src="../dist/js/footer.js"></script>
+</body>
+</html>

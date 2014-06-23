@@ -1,0 +1,208 @@
+<!--好不容易有了好点子，结果一查有人做了
+        好不容易有了没人做过的好点子，发现只有自己一个人coding
+            好不容易找来了帮手，发现大家其实都是新手
+                好不容易东西做出来了，发现没人会推广，这次是真没人
+                    学校里视野还是太狭窄，是该出去闯闯了吧-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="稻禾;活动详情">
+    <meta name="author" content="Azure21">
+    <link rel="shortcut icon" href="../dist/ico/padddyicon.png">
+
+    <title>活动详情</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../dist/css/main.css" rel="stylesheet">
+    <link href="../dist/css/activity.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- LogoutModal -->
+<div class="modal fade myModal" id="logout-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove-sign"></span></button>
+                <h4 class="modal-title" id="myModalLabel">登出稻禾</h4>
+            </div>
+            <div class="modal-body">
+                <p>确定要注销你的账户？</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <a href="main.html" class="btn btn-warning">确定登出</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- JoinModal -->
+<div class="modal fade myModal" id="join-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove-sign"></span></button>
+                <h4 class="modal-title" id="myModalLabel1">申请加入</h4>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <textarea class="form-control field myTextarea" rows="6" placeholder="" required></textarea>
+                    <p>介绍一下自己，并解释为什么要加入这个活动</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="submit" class="btn btn-warning">确定申请</button>
+                </div>
+            </form>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img id="padddytitle" src="../dist/img/padddytitle.png">
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="main.html">首页</a></li>
+                <li><a href="launch0.html">发起</a></li>
+                <li><a href="#contact">专题</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-send"></span> 发送反馈</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> 加入我们</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-leaf"></span> 关于稻禾</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="list-inline"><img class="featurette-image img-responsive img-circle" src="http://lorempixel.com/50/50/abstract/1" alt="Generic placeholder thumbnail"></li>
+                <li class="dropdown list-inline">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">禄一湛 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="profile.html">个人主页</a></li>
+                        <li><a href="infoedit.html">修改资料</a></li>
+                        <li><a data-toggle="modal" href="#logout-modal">登出稻禾</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container activityContainer" id="myContainer">
+        <div class="starter-template">
+            <h1>稻禾黑客马拉松</h1>
+            <p class="lead">发起自 稻禾实验室</p>
+            <p><img src="../dist/ico/location.png"/>&nbsp;&nbsp;机电楼315&nbsp;&nbsp;&nbsp;&nbsp;<img src="../dist/ico/time.png"/>&nbsp;&nbsp;2013/11/29&nbsp;&nbsp;3:00pm</p>
+        </div>
+    <ul class="nav nav-pills" id="my-nav-pills">
+        <li><a class="my-active" href="#">活动信息</a></li>
+        <li><a class="my-inactive" href="members.html">活动成员</a></li>
+        <li><a class="my-inactive" href="log.html">活动日志</a></li>
+        <li class="pull-right"><a><span class="glyphicon glyphicon-tag"></span> 科技创新</a></li>
+    </ul>
+    <hr id="nav-hr">
+    <div class="row thumbnail" id="activityThumbnail">
+        <div class="col-xs-12 col-sm-6 col-md-8" id="bigImg">
+            <img class="img-responsive center-block" src="http://lorempixel.com/600/400/cats/1">
+            <p>给你一个需求，你能否在10个小时内构思出解决方案然后通过编程把他实现出来，稻禾黑客马拉松，看看谁最黑客？！！</p>
+            <h2><a>我的故事</a></h2>
+            <p>在 Facebook 上市前夜，公司以一种特别的方式进行了庆祝：通宵编程。在公司内部，这种通宵编程的活动被称为”黑客马拉松”（Hackathon）。在这个活动中，出现了许多好点子，并且用在了网站的建设上。”黑客马拉松“已经成为公司维持初创精神、保证创新力的重要方法。那么，“黑客马拉松”是如何兴起的？它有什么特别的故事？近日，Fastcompany 网站采访了 Facebook 公司“黑客马拉松”的组织者 Pedram Keyani。
+
+
+                Keyani 于五年前加入 Facebook。在入职的第一个月的某天，他对妻子说，晚上要在公司工作。在妻子的追问下，他花了 20 分钟的时间解释这个决定。他说公司在做非常酷的事情，而且每个人都会参加通宵编程。在第一次“黑客马拉松”之后，他爱上了这个活动。当时的“黑客马拉松”是没有人组织的。两周后，他给其他员工发了一封邮件，说，“嘿，我要买些中国菜，通宵编码了”。
+
+                他的行为得到了公司多数人的响应。第二天，Mark Zuckerberg 来到他的办公桌前说，“那很酷”。于是，没隔六到八周，他都会问其他人是否想参加“黑客马拉松”。在他的推动下，这逐渐成为公司内部的一件有规律的活动。</p>
+            <h2><a>活动初衷</a></h2>
+            <p>Keyani 说，“黑客马拉松”上有一个很关键的原则：不能做自己的日常工作，这是因为活动的主要目的是激发新点子。每次活动都会出现四五项新想法，并且使用在网站上面，有些主意甚至改变了公司的方向。比如，公司内部一直不愿意构建的聊天客户端。“编码胜过了争论”，Keyani 说，“你可以为一件事情争上两天，或者你可以在一小时内做好，然后证明你的观点”。
+
+                公司内部有一个团队叫做“Hackathon Ideas”，在黑客马拉松活动前的一周，人们会发表新想法，形成一些团队。Keyani 说，他曾经和四个实习生、一个基础架构工程师、营销团队人员组成过团队，并做了一个不错的项目，后来他们都成了朋友。
+
+                关于“黑客马拉松”的间隔时间，Keyani 说，如果间隔少于六周，人们会觉得影响自己的生活。不过，在六周或七周之后，人们会觉得等待时间过长，有人就开始给他发邮件，询问是否会举办活动。
+
+                “黑客马拉松”的传统之一是，他们总是从一个固定的地点购买中国菜：Palo Alto 的 Jing Jings。在公司里，员工们在堆积的食物旁，通宵编码，到了第二天的三点，20%-30% 的人会睡觉或者回家。随后每过一小时，会有 10% 的员工走掉。到了六点，Keyani 会宣布活动结束。
+
+                组织过多次马拉松之后，Keyani 说自己学会了一个重要的技巧，找到某个会议室，提前睡上两个小时。某次 Hackathon 的时候，他问 Mark Zuckerberg，“嘿，你的后院有个吊床，我能去那儿睡吗？”。Mark 说，“这有点傻啊，把我钥匙拿走吧”。于是，他跑到 Mark 的床上睡了一觉。
+
+                黑客马拉松活动中，最有趣的一次是”家用扎啤机“。Keyani 有一个名叫 George 的朋友。George 的初创公司没有成功，留下了一个家用扎啤机。两个人想要把扎啤机带到公司，而且不被炒了鱿鱼，于是他们想了个点子。在扎啤机的上面，他们放了一个电脑。人们在电脑上划自己的员工卡，电脑会给手中拿着啤酒的员工拍照，然后照片上传为 Facebook 新帖。在黑客马拉松的时候，两个人把扎啤机带了过来，很快两个人喝酒的帖子被所有人转载了。突然办公室里许多人问：”嘿，扎啤在哪里？“在十分钟之内，有 15 个人开始排队，当晚就把啤酒全部喝完了。</p>
+            <h2><a>活动目标</a></h2>
+            <p>Kayani 说，这个有趣的想法其实是有实际意义的，就是如何把 Facebook 和现实世界联系起来，”我们做的事情是找到一种方法，使得人们通过物理上的交互，就可以实现和在网站上输入用户账号、密码、发表内容等同的事情”。
+
+                黑客马拉松”的核心理念是，以不同的方式思考你以前没有机会专注的主意。Kayani 说，许多公司都有”思考周“的观点，在一周内进行头脑风暴活动。那不一定是在深夜，”如果一个公司雇佣了合格的员工，相信他们能有好主意，就应该给予他们空闲时间和自由度，让他们在公司需要探索的方面，想出一些了不起的东西”。</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+            <div class="row" id="activityData">
+                <div class="col-xs-4 col-sm-12 col-md-12 col-lg-12">
+                    <h1><strong>33</strong>/100</h1>
+                    <p>已加入</p>
+                </div>
+                <div class="col-xs-4 col-sm-12 col-md-12 col-lg-12">
+                    <h1><strong>40</strong></h1>
+                    <p>已提交加入申请</p>
+                </div>
+                <div class="col-xs-4 col-sm-12 col-md-12 col-lg-12">
+                    <h1><strong>320</strong></h1>
+                    <p>已关注</p>
+                </div>
+            </div>
+            <div class="thumbnail" id="activityMemberRequire">
+            <p><strong>成员要求：</strong>给你一个需求，你能否在10个小时内构思出解决方案然后通过编程把他实现出来，稻禾黑客马拉松，看看谁最黑客？！！</p>
+            </div>
+            <button class="btn btn-warning btn-lg btn-block" data-toggle="modal" href="#join-modal">申请加入</button>
+            <button class="btn btn-default btn-lg btn-block">关注活动</button>
+            <div class="thumbnail thumbnail-member">
+                <img class="featurette-image img-responsive img-circle center-block" src="http://lorempixel.com/120/120/abstract/1" alt="Generic placeholder thumbnail">
+                <h2>Azure21</h2>
+                <p>北京科技大学</p>
+                <p>计算机科学与技术</p>
+                <p><strong>活动发起人：</strong>学生，google脑残粉，做一些小产品，写一些小程序，也不知道算不算个开发者...</p>
+            </div>
+
+        </div>
+    </div>
+
+</div> <!-- /container -->
+<div id="footer">
+        <img class="center-block" id="footerlogo" src="../dist/img/footerlogo.png">
+</div>
+
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../dist/js/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script src="../dist/js/footer.js"></script>
+</body>
+</html>

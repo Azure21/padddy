@@ -1,0 +1,226 @@
+body {
+    padding-top: 80px;
+    background-image: url("../img/grey.png");
+}
+
+
+#jumbotronbody{
+    background-image: url("http://lorempixel.com/1140/220/nature/3");
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    height: 220px;
+    padding: 0px;
+}
+
+
+
+#jumbotrontitle{
+     color: #ffffff ;
+     margin-top: 50px;
+     margin-bottom: 30px;
+
+ }
+
+#nav-hr{
+    color: #262627;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#padddytitle{
+    height: 50px;
+}
+
+
+.my-inactive{
+    color: #959595;
+}
+
+.my-active{
+    color: #3272ba;
+}
+
+.caption h4{
+    margin-top:0;
+}
+
+.caption p{
+    color:#888;
+    margin-top:0;
+}
+
+.detail p{
+    color:#888;
+    font-size:12px;
+}
+
+.detail table{
+    margin-top:0;
+    margin-bottom:0;
+    width:100%;
+}
+
+.detail table tr{
+    text-align:center;
+}
+
+.detail table tr td{
+    color:#aaa;
+    width:33.3%;
+}
+
+#footer{
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.footerStyle1 {
+    position: fixed;
+    bottom: 0;
+}
+
+.footerStyle2 {
+    position: static;
+}
+
+#footerlogo{
+    height: 100px;
+}
+
+#modal-signin{
+    padding-top: 200px;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.form-signin .checkbox {
+    font-weight: normal;
+}
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+#avatar-big{
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#avatar-edit{
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+.edit-title{
+    text-align: right;
+}
+
+.edit-container{
+    margin-top: 20px;
+    max-width: 600px;
+    margin-bottom: 120px;
+}
+
+.myModal{
+    padding-top: 150px;
+}
+
+.form-signin input[name="email"]{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin input[name="password"]{
+    margin-bottom: 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.myTextarea{
+    resize: none;
+}
+
+.selectpicker{
+    -webkit-appearance: none;
+    background: #fff url(../img/select-large-bg.png) no-repeat 97% 14px;
+}
+
+.myThumbnail{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 270px;
+    min-width: 270px;
+    margin-bottom: 30px;
+}
+
+.myThumbnail h4 {
+    text-align: center;
+}
+
+.myThumbnail h4 a{
+    color: #428bca;
+    text-decoration: none;
+
+}
+
+.activityDesc{
+    height: 90px;
+}
+
+
+#successModal{
+    padding-top: 150px;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 999px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
