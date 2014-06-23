@@ -1,4 +1,4 @@
 padddy
 ======
 
-static web page of padddy 1.0 beta
+static web page of padddy 0.9 beta
