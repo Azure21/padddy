@@ -36,7 +36,7 @@
         <div class="modal-content">
             <div class="modal-header" style="">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove-sign"></span></button>
-                <h4 class="modal-title" id="myModalLabel">登出稻禾</h4>
+                <h4 class="modal-title">登出稻禾</h4>
             </div>
             <div class="modal-body">
                 <p>确定要注销你的账户？</p>
@@ -45,6 +45,50 @@
                 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
                 <a href="main.html" class="btn btn-warning">确定登出</a>
             </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- admitModal -->
+<div class="modal fade myModal" id="admit-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove-sign"></span></button>
+                <h4 class="modal-title">通过申请</h4>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <textarea class="form-control field myTextarea" rows="6" placeholder="" required></textarea>
+                    <p>有什么想对你的新成员说呢？</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="submit" class="btn btn-warning">确定</button>
+                </div>
+            </form>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- denyModal -->
+<div class="modal fade myModal" id="deny-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove-sign"></span></button>
+                <h4 class="modal-title">拒绝申请</h4>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <textarea class="form-control field myTextarea" rows="6" placeholder="" required></textarea>
+                    <p>写下你的拒绝理由</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="submit" class="btn btn-warning">确定</button>
+                </div>
+            </form>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
@@ -70,8 +114,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#"><span class="glyphicon glyphicon-send"></span> 发送反馈</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> 加入我们</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-leaf"></span> 关于稻禾</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> 关于稻禾</a></li>
                     </ul>
                 </li>
             </ul>
@@ -83,7 +126,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="profile.html">个人主页</a></li>
                         <li><a href="infoedit.html">修改资料</a></li>
-                        <li><a href="#">消息中心<span class="badge pull-right">42</span></a></li>
+                        <li class="active"><a href="#">消息中心<span class="badge pull-right blue-badge">42</span></a></li>
                         <li><a data-toggle="modal" href="#logout-modal">登出稻禾</a></li>
                     </ul>
                 </li>
@@ -117,8 +160,8 @@
                     出现了许多好点子，并且用在了网站的建设上。”黑客马拉松“已经成为公司维持
                     初创精神、保证创新力的重要方法。</p>
                 <p>
-                    <a href="#" class="btn btn-warning" role="button">通过申请</a>
-                    <a href="#" class="btn btn-default" role="button">拒绝申请</a>
+                    <a class="btn btn-warning" role="button" data-toggle="modal" href="#admit-modal" >通过申请</a>
+                    <a class="btn btn-default" role="button"  data-toggle="modal" href="#deny-modal" >拒绝申请</a>
                 </p>
             </div>
             <div class="col-xs-3 col-sm-2"><p class="pull-left">50分钟前</p></div>
@@ -153,51 +196,64 @@
             </div>
             <div class="col-xs-3 col-sm-2"><p class="pull-left">50分钟前</p></div>
         </div>
-        <hr>        <div class="row">
+        <hr>
+        <div class="row">
         <div class="col-xs-3 col-sm-2"><img class="featurette-image img-responsive img-circle pull-right" src="http://lorempixel.com/50/50/abstract/1" alt="Generic placeholder thumbnail"></div>
         <div class="col-xs-6 col-sm-8">
-            <p><a href="profile.html"><strong>Azure21</strong></a>申请加入活动<a href="activity.html"><strong>稻禾稻禾马拉松</strong></a></p>
-            <p><strong>申请理由:</strong>在 Facebook 上市前夜，公司以一种特别的方式进行了庆祝：通宵编程。在公司
+            <p><a href="profile.html"><strong>Azure21</strong></a>已经同意你加入活动<a href="activity.html"><strong>稻禾稻禾马拉松</strong></a>的申请</p>
+            <p><strong>相关留言:</strong>在 Facebook 上市前夜，公司以一种特别的方式进行了庆祝：通宵编程。在公司
                 内部，这种通宵编程的活动被称为”黑客马拉松”（Hackathon）。在这个活动中，
                 出现了许多好点子，并且用在了网站的建设上。”黑客马拉松“已经成为公司维持
                 初创精神、保证创新力的重要方法。</p>
             <p>
-                <a href="#" class="btn btn-warning" role="button">通过申请</a>
-                <a href="#" class="btn btn-default" role="button">拒绝申请</a>
+                <a href="#" class="btn btn-warning" role="button">我知道了</a>
             </p>
         </div>
         <div class="col-xs-3 col-sm-2"><p class="pull-left">50分钟前</p></div>
     </div>
-        <hr>        <div class="row">
+        <hr>
+        <div class="row">
         <div class="col-xs-3 col-sm-2"><img class="featurette-image img-responsive img-circle pull-right" src="http://lorempixel.com/50/50/abstract/1" alt="Generic placeholder thumbnail"></div>
         <div class="col-xs-6 col-sm-8">
-            <p><a href="profile.html"><strong>Azure21</strong></a>申请加入活动<a href="activity.html"><strong>稻禾稻禾马拉松</strong></a></p>
-            <p><strong>申请理由:</strong>在 Facebook 上市前夜，公司以一种特别的方式进行了庆祝：通宵编程。在公司
+            <p><a href="profile.html"><strong>Azure21</strong></a>没有同意你加入活动<a href="activity.html"><strong>稻禾稻禾马拉松</strong></a>的申请</p>
+            <p><strong>相关留言:</strong>在 Facebook 上市前夜，公司以一种特别的方式进行了庆祝：通宵编程。在公司
                 内部，这种通宵编程的活动被称为”黑客马拉松”（Hackathon）。在这个活动中，
                 出现了许多好点子，并且用在了网站的建设上。”黑客马拉松“已经成为公司维持
                 初创精神、保证创新力的重要方法。</p>
             <p>
-                <a href="#" class="btn btn-warning" role="button">通过申请</a>
-                <a href="#" class="btn btn-default" role="button">拒绝申请</a>
+                <a href="#" class="btn btn-warning" role="button">我知道了</a>
             </p>
         </div>
         <div class="col-xs-3 col-sm-2"><p class="pull-left">50分钟前</p></div>
     </div>
-        <hr>        <div class="row">
-        <div class="col-xs-3 col-sm-2"><img class="featurette-image img-responsive img-circle pull-right" src="http://lorempixel.com/50/50/abstract/1" alt="Generic placeholder thumbnail"></div>
-        <div class="col-xs-6 col-sm-8">
-            <p><a href="profile.html"><strong>Azure21</strong></a>申请加入活动<a href="activity.html"><strong>稻禾稻禾马拉松</strong></a></p>
-            <p><strong>申请理由:</strong>在 Facebook 上市前夜，公司以一种特别的方式进行了庆祝：通宵编程。在公司
-                内部，这种通宵编程的活动被称为”黑客马拉松”（Hackathon）。在这个活动中，
-                出现了许多好点子，并且用在了网站的建设上。”黑客马拉松“已经成为公司维持
-                初创精神、保证创新力的重要方法。</p>
-            <p>
-                <a href="#" class="btn btn-warning" role="button">通过申请</a>
-                <a href="#" class="btn btn-default" role="button">拒绝申请</a>
-            </p>
+        <hr>
+        <div class="row">
+            <div class="col-xs-3 col-sm-2"><img class="featurette-image img-responsive img-circle pull-right" src="http://lorempixel.com/50/50/abstract/1" alt="Generic placeholder thumbnail"></div>
+            <div class="col-xs-6 col-sm-8">
+                <p><a href="profile.html"><strong>Azure21</strong></a>已经同意你加入活动<a href="activity.html"><strong>稻禾稻禾马拉松</strong></a>的申请</p>
+                <p><strong>相关留言:</strong>在 Facebook 上市前夜，公司以一种特别的方式进行了庆祝：通宵编程。在公司</p>
+                <p>
+                    <a href="#" class="btn btn-default disabled" role="button">已确认</a>
+                </p>
+            </div>
+            <div class="col-xs-3 col-sm-2"><p class="pull-left">50分钟前</p></div>
         </div>
-        <div class="col-xs-3 col-sm-2"><p class="pull-left">50分钟前</p></div>
-    </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-3 col-sm-2"><img class="featurette-image img-responsive img-circle pull-right" src="http://lorempixel.com/50/50/abstract/1" alt="Generic placeholder thumbnail"></div>
+            <div class="col-xs-6 col-sm-8">
+                <p><a href="profile.html"><strong>Azure21</strong></a>没有同意你加入活动<a href="activity.html"><strong>稻禾稻禾马拉松</strong></a>的申请</p>
+                <p><strong>相关留言:</strong>在 Facebook 上市前夜，公司以一种特别的方式进行了庆祝：通宵编程。在公司
+                    内部，这种通宵编程的活动被称为”黑客马拉松”（Hackathon）。在这个活动中，
+                    出现了许多好点子，并且用在了网站的建设上。”黑客马拉松“已经成为公司维持
+                    初创精神、保证创新力的重要方法。</p>
+                <p>
+                    <a href="#" class="btn btn-default disabled" role="button">已确认</a>
+                </p>
+            </div>
+            <div class="col-xs-3 col-sm-2"><p class="pull-left">50分钟前</p></div>
+        </div>
+
     </div>
 
 </div> <!-- /container -->

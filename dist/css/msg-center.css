@@ -1,3 +1,13 @@
 .nav-inactive{
     color:#999999;
 }
+
+.blue-badge{
+    color: #428bca;
+    background-color: #fff;
+}
+
+.gray-badge{
+    color: #fff;
+    background-color: #999;
+}
