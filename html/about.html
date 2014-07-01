@@ -1,0 +1,206 @@
+<!--
+七月份，一下子忙起来了！
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="稻禾;发送反馈">
+    <meta name="author" content="Azure21">
+    <link rel="shortcut icon" href="../dist/ico/padddyicon.png">
+
+    <title>发送反馈</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../dist/css/main.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+
+<!-- LogoutModal -->
+<div class="modal fade myModal" id="logout-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove-sign"></span></button>
+                <h4 class="modal-title" id="myModalLabel">登出稻禾</h4>
+            </div>
+            <div class="modal-body">
+                <p>确定要注销你的账户？</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <a href="main.html" class="btn btn-warning">确定登出</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img id="padddytitle" src="../dist/img/padddytitle.png">
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="main.html">首页</a></li>
+                <li><a href="launch0.html">发起</a></li>
+                <li><a href="#contact">专题</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="feedback.html"><span class="glyphicon glyphicon-send"></span> 发送反馈</a></li>
+                        <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> 关于稻禾</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="list-inline"><img class="featurette-image img-responsive img-circle" src="http://lorempixel.com/50/50/abstract/1" alt="Generic placeholder thumbnail"></li>
+                <li class="dropdown list-inline">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">禄一湛 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="profile.html">个人主页</a></li>
+                        <li><a href="infoedit.html">修改资料</a></li>
+                        <li><a href="msg_center.html">消息中心<span class="badge pull-right">42</span></a></li>
+                        <li><a href="#">登出稻禾</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container about-container" id="myContainer">
+
+    <div class="starter-template">
+        <h1>关于我们</h1>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-9">
+            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-3">
+            <img class="featurette-image img-responsive" src="http://lorempixel.com/300/300/cats/1" alt="Generic placeholder image">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-3">
+            <img class="featurette-image img-responsive" src="http://lorempixel.com/300/300/cats/2" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-9">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-9">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-3">
+            <img class="featurette-image img-responsive" src="http://lorempixel.com/300/300/cats/3" alt="Generic placeholder image">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-3">
+            <img class="featurette-image img-responsive" src="http://lorempixel.com/300/300/cats/4" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-9">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-9">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-3">
+            <img class="featurette-image img-responsive" src="http://lorempixel.com/300/300/cats/5" alt="Generic placeholder image">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+    <div class="row featurette">
+        <div class="col-md-3">
+            <img class="featurette-image img-responsive" src="http://lorempixel.com/300/300/cats/6" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-9">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-9">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-3">
+            <img class="featurette-image img-responsive" src="http://lorempixel.com/300/300/cats/7" alt="Generic placeholder image">
+        </div>
+    </div>
+
+    <br>
+</div> <!-- /container -->
+<div id="footer">
+    <img class="center-block" id="footerlogo" src="../dist/img/footerlogo.png">
+</div>
+
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../dist/js/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script src="../dist/js/footer.js"></script>
+</body>
+</html>
+
+
+
